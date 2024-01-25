@@ -1,32 +1,16 @@
-@font-face {
-    font-family: "Lato-Light";
-    src: url("./assets/fonts/Lato-Light.ttf") format("truetype");
-  }
-  
-  @font-face {
-    font-family: "Lato-Black";
-    src: url("./assets/fonts/Lato-Black.ttf") format("truetype");
-  }
-  
-  @font-face {
-    font-family: "Lato-Regular";
-    src: url("./assets/fonts/Lato-Regular.ttf") format("truetype");
-  }
-  
+
+
+
   body {
     font-family: "Lato-Light", sans-serif;
     margin: 0;
     color: #000000;
   }
   
-  img,
-  p,
-  li {
-    margin-left: 2em;
-  }
   
-  h1,
-  h2,
+
+  
+ 
   h3 {
     font-family: "Lato-Regular", sans-serif;
     margin: 1em;
@@ -47,7 +31,13 @@
     background-color: #5215f7;
     color: white;
   }
+
+  li {
+    margin-left: 2em;
+  }
   
+  
+
   .content-a {
     margin-left: 8em;
     margin-right: 4em;
@@ -84,7 +74,8 @@
     margin-right: 10px;
   }
 
-  /* veranderd de grootte van de icoon */
+
+  /* changes the size of icons */
   .condition-icon {
     width: 1em;
     height: 1em;
@@ -112,15 +103,7 @@
     background-color: rgba(255, 255, 255, 0.7); 
   }
   
-  .modal-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-  }
+
   
   .close-btn {
     position: absolute;
@@ -149,7 +132,7 @@
   }
   
   
-  /* styles voor de activiteiten lijsten */
+  /* style for the activity list */
   ul {
     list-style: none;
     padding: 0;
@@ -188,7 +171,18 @@
     color: rgb(156, 104, 104);
   }
 
-  /* past de grootte van de afbeelding automatisch aan */
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+
+
+  /* adjust the size of images */
   .img-act {
     max-width: 50px; 
     margin-right: 10px;
@@ -200,8 +194,10 @@
   }
 
   
-  /* Media Query voor schermen onder 700px */
-  /* switcht naar een column layout */
+
+
+  /* Media Query for devices under 700px */
+  /* switches to a column layout */
   @media (max-width: 700px) {
     .grid-container {
       grid-template-columns: 1fr; 
@@ -211,7 +207,7 @@
       grid-area: auto; 
     }
 
-    /* veranderd de kleur van de background*/
+    /* changes the color of the background */
     .section-c {
       background-color: #ffffff; 
     }
@@ -221,3 +217,20 @@
       margin-right: 0;
     }
   }
+
+  
+  @font-face {
+    font-family: "Lato-Light";
+    src: url("./assets/fonts/Lato-Light.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "Lato-Black";
+    src: url("./assets/fonts/Lato-Black.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "Lato-Regular";
+    src: url("./assets/fonts/Lato-Regular.ttf") format("truetype");
+  }
+  
