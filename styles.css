@@ -1,0 +1,223 @@
+@font-face {
+    font-family: "Lato-Light";
+    src: url("./assets/fonts/Lato-Light.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "Lato-Black";
+    src: url("./assets/fonts/Lato-Black.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "Lato-Regular";
+    src: url("./assets/fonts/Lato-Regular.ttf") format("truetype");
+  }
+  
+  body {
+    font-family: "Lato-Light", sans-serif;
+    margin: 0;
+    color: #000000;
+  }
+  
+  img,
+  p,
+  li {
+    margin-left: 2em;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    font-family: "Lato-Regular", sans-serif;
+    margin: 1em;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .section {
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section-a {
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: #5215f7;
+    color: white;
+  }
+  
+  .content-a {
+    margin-left: 8em;
+    margin-right: 4em;
+  }
+  
+  .section-b {
+    grid-area: 2 / 1 / 3 / 2;
+    background-color: ffffff;
+  }
+  
+  .section-c {
+    grid-area: 1 / 2 / 3 / 3;
+    background-color: #ffffff;
+  }
+  
+  .weather-forecast {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  
+  .city-weather {
+    width: 100%; 
+    padding: 5px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    border-bottom: 1px solid #ccc; 
+  }
+  
+
+  
+  .city-weather h3 {
+    margin-right: 10px;
+  }
+
+  /* veranderd de grootte van de icoon */
+  .condition-icon {
+    width: 1em;
+    height: 1em;
+  }
+  
+  button {
+    margin: 5px;
+    padding: 10px;
+    background-color: #5215f7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+
+ 
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7); 
+  }
+  
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+ 
+  .today-temperature {
+    padding: 10px;
+    background-color: #f0ebfe;
+    max-width: 100%;
+  }
+  
+  .today-temperature p {
+    margin: 0;
+  }
+
+  
+  
+  .today-activities,
+  .not-today-activities {
+    padding: 10px;
+  }
+  
+  
+  /* styles voor de activiteiten lijsten */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 5px;
+  }
+  
+  .activity {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+    padding: 10px;
+    border-bottom: 1px solid #ccc; 
+    cursor: pointer; 
+  }
+  
+  .highlyrec {
+    font-family: "Lato-Black", sans-serif;
+    color: grey;
+  }
+  
+  .rec {
+    font-family: "Lato-Black", sans-serif;
+    color: grey;
+  }
+  
+  .notrec {
+    font-family: "Lato-Black", sans-serif;
+    color: rgb(156, 104, 104);
+  }
+  
+  .nietdoen {
+    font-family: "Lato-Black", sans-serif;
+    color: rgb(156, 104, 104);
+  }
+
+  /* past de grootte van de afbeelding automatisch aan */
+  .img-act {
+    max-width: 50px; 
+    margin-right: 10px;
+  }
+  
+
+  .activity-details {
+    max-width: calc(100% - 60px);
+  }
+
+  
+  /* Media Query voor schermen onder 700px */
+  /* switcht naar een column layout */
+  @media (max-width: 700px) {
+    .grid-container {
+      grid-template-columns: 1fr; 
+    }
+  
+    .section {
+      grid-area: auto; 
+    }
+
+    /* veranderd de kleur van de background*/
+    .section-c {
+      background-color: #ffffff; 
+    }
+
+    .content-a {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }

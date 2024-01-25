@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <linkrel="stylesheet" type="text/css"/>
+    <title>DEPT Weather Planner</title>
+  </head>
+
+  <body>
+
+    <div class="grid-container">
+      <div class="section section-a">
+        <img src="assets/svg/dept.svg" class="logo" />
+        <div class="content-a">
+          <h1>DEPT ® Weather Planner</h1>
+          <p>
+            Picture this: an application that doesn't just tell you the weather,
+            but also helps you plan your activities around it. Imagine knowing
+            exactly the perfect day to plan that hike, or when to avoid the
+            outdoor concert due to an unexpected shower. That's exactly what the
+            Dept Weather Planner offers you.
+          </p>
+          <br />
+          <p>
+            Built with cutting-edge technologies, our weather planner brings you
+            accurate, real-time weather data with a slick and user-friendly
+            interface. But it's not just a weather app; it's an intuitive daily
+            planner that syncs with the weather. With a range of activities to
+            choose from, it suggests the best options based on current and
+            forecasted weather conditions.
+          </p>
+        </div>
+      </div>
+
+      <div class="section section-b">
+        <div class="title-b">Weather upcoming 5 Days</div>
+        <div id="forecast-block" class="weather-forecast">
+
+        </div>
+      </div>
+
+      
+      <div class="section section-c">
+        <div class="today-temperature">
+          <h1><strong>29° Today</strong></h1>
+          <p>Its nice and warm in The Netherlands, enjoy the sun while it lasts! </p>
+        </div>
+
+        <!-- Lijst met activiteiten die je kan doen op dat moment -->
+
+        <div class="today-activities">
+          <h2>some activities to do today!</h2>
+          <ul>
+
+            <div class="activity">
+              <img src="assets/img/vaart.jpeg" class="img-act" />
+              <h3> Enjoy a Canal Cruise </h3>
+              <div class="highlyrec"><li>Enjoy a cruise through the canals in this nice weather!</li></div>
+            </div>
+
+            <div class="activity">
+              <img src="assets/img/artis.jpg" class="img-act" />
+              <h3>Discover the Amsterdam Zoo!</h3>
+              <div class="rec"><li>Come and see our wild animals in our Zoo in Amsterdam!</li></div>
+            </div>
+
+            <div class="activity">
+              <img src="assets/img/eten.jpeg" class="img-act" />
+              <h3>Food & Drinks</h3>
+              <div class="rec"><li>Visit some of the most highly rated restaurants in town!</li></div>
+            </div>
+
+          </ul>
+
+        </div>
+
+        <!-- Lijst met activiteiten die je liever niet kan doen op dat moment  -->
+
+        <div class="not-today-activities">
+          <h2>activitys you should not do</h2>
+          <ul>
+
+            <div class="activity">
+              <img src="assets/img/skate.jpg" class="img-act" />
+              <h3>Ice skating</h3>
+              <div class="nietdoen"><li>Its not ideal to go Ice skating in this weather, it might be a better idea in the winter</li></div>
+            </div>
+
+            <div class="activity">
+              <img src="assets/img/strand.jpg" class="img-act" />
+              <h3>Go to the beach</h3>
+              <div class="notrec"><li>It might be too hot to go to the beach, if you do go dont forget to put on sunscreen!!</li></div>
+            </div>
+
+            <div class="activity">
+              <img src="assets/img/rock.jpg" class="img-act" />
+              <h3>Climbing</h3>
+              <div class="notrec"><li>in this weather its almost impossible to climb with the sun burning in youre face</li></div>
+            </div>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="modal" id="activityModal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h3>Activity</h3>
+        <p>Yusu</p>
+        <!-- Add any additional content or styling for the popup here -->
+      </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+  </body>
+
+
+</html>
