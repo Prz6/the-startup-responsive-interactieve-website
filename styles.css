@@ -183,7 +183,7 @@
 
 
   /* adjust the size of images */
-  .img-act {
+  .img-alt {
     max-width: 50px; 
     margin-right: 10px;
   }
@@ -218,29 +218,7 @@
     }
   }
 
-    /*Media query for dark mode*/
-    @media (prefers-color-scheme: dark) {
-
-        body {
-          background-color: rgb(101, 101, 101);;
-        }
-      
-        h1 {
-          color: #dadce4;
-        }
-      
-        .panelen {
-          background-color: rgb(101, 101, 101);;
-      }
-      
-      
-        .panelen:hover {
-          box-shadow:rgb(92, 92, 92) 9.91px 9.91px 15px inset,
-           rgb(110, 110, 110) -9.91px -9.91px 15px inset;
-        }
-      
-      }
-
+ 
 
    /*Fonts*/
   @font-face {
